@@ -43,6 +43,8 @@ implements ApiTransporter
 
         curl_close($curl);
 
+        logActivity("URL : $url data" . serialize([$body]));
+		
         $request = new ApiRequest($method, $url);
 
         return new ApiResponse($request, $body, $status);

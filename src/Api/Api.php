@@ -95,7 +95,8 @@ class Api
             $postData = json_encode($data);
         }
 
-        $url = $this->url($path, $getData);
+        // $url = $this->url($path, $getData);
+        echo $url = $this->url($path, $getData);
 
         return $this->transport->call($method, $url, $postData, $headers);
     }

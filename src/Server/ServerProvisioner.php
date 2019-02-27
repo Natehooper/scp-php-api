@@ -52,6 +52,10 @@ class ServerProvisioner
             'server_id' => $server->id,
         ] + $set;
         $result = $this->api->post('server/provision', $provisionData);
+
+        debug($result);
+        die();
+
         $data = $result->data();
 
         if (!$data) {

@@ -2,6 +2,8 @@
 
 namespace Scp\Api;
 
+use Scp\Api\Api;
+
 abstract class ApiRepository
 {
     /**
